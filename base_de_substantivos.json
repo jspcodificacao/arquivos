@@ -57,6 +57,15 @@
       "particularidades": {
         "nota": "Forma abreviada de 'automóvel'."
       }
+    },
+    {
+      "nome": "Buch",
+      "transcricao_ipa_singular": "[buːx]",
+      "genero": "Neutro",
+      "plural": "Bücher",
+      "transcricao_ipa_plural": "[ˈbyːçɐ]",
+      "traducao": "livro",
+      "particularidades": null
     }
   ]
 }
