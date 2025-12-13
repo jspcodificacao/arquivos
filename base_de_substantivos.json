@@ -28,6 +28,24 @@
       "transcricao_ipa_plural": "[ˈhɔɪ̯zɐ]",
       "traducao": "Casa",
       "particularidades": null
+    },
+    {
+      "nome": "Schule",
+      "transcricao_ipa_singular": "[ˈʃuːlə]",
+      "genero": "Feminino",
+      "plural": "Schulen",
+      "transcricao_ipa_plural": "[ˈʃuːlən]",
+      "traducao": "escola",
+      "particularidades": null
+    },
+    {
+      "nome": "Stadt",
+      "transcricao_ipa_singular": "[ʃtat]",
+      "genero": "Feminino",
+      "plural": "Städte",
+      "transcricao_ipa_plural": "[ˈʃtɛtə]",
+      "traducao": "cidade",
+      "particularidades": null
     }
   ]
 }
