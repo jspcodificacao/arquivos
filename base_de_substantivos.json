@@ -1,14 +1,12 @@
 {
-  "Haus": {
-    "substantivos": [
-      {
-        "nome": "Haus",
-        "genero": "Neutro",
-        "plural": "Häuser",
-        "transcricao_ipa": "[haʊ̯s]",
-        "traducao": "Casa",
-        "particularidades": null
-      }
-    ]
-  }
+  "substantivos": [
+    {
+      "nome": "Ball",
+      "genero": "Neutro",
+      "plural": "Balls",
+      "transcricao_ipa": "/bɔːl/",
+      "traducao": "Bola",
+      "particularidades": null
+    }
+  ]
 }
