@@ -4,8 +4,16 @@
       "nome": "Ball",
       "genero": "Neutro",
       "plural": "Balls",
-      "transcricao_ipa": "/bɔːl/",
+      "transcricao_ipa": "[bɔːl]",
       "traducao": "Bola",
+      "particularidades": null
+    },
+    {
+      "nome": "Hund",
+      "genero": "Masculino",
+      "plural": "Hunde",
+      "transcricao_ipa": "[hʊnt]",
+      "traducao": "Cão",
       "particularidades": null
     }
   ]
