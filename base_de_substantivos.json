@@ -66,6 +66,35 @@
       "transcricao_ipa_plural": "[ˈbyːçɐ]",
       "traducao": "livro",
       "particularidades": null
+    },
+    {
+      "nome": "Kuli",
+      "transcricao_ipa_singular": "[ˈkuːli]",
+      "genero": "Masculino",
+      "plural": "Kulis",
+      "transcricao_ipa_plural": "[ˈkuːlɪs]",
+      "traducao": "caneta esferográfica",
+      "particularidades": null
+    },
+    {
+      "nome": "Heft",
+      "transcricao_ipa_singular": "[hɛft]",
+      "genero": "Neutro",
+      "plural": "Hefte",
+      "transcricao_ipa_plural": "[ˈhɛftə]",
+      "traducao": "caderno",
+      "particularidades": null
+    },
+    {
+      "nome": "Katze",
+      "transcricao_ipa_singular": "[ˈkat͡sə]",
+      "genero": "Feminino",
+      "plural": "Katzen",
+      "transcricao_ipa_plural": "[ˈkat͡sn̩]",
+      "traducao": "gata",
+      "particularidades": {
+        "nota": "pode see traduzido como gato quando não se sabe se é um gato macho ou fêmea"
+      }
     }
   ]
 }
