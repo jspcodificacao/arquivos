@@ -1,5 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Schema de uma base de dados de substantivos no idioma alemão.",  
+  "versao": "1.5",
+  "$comment": "v1.5 acrescentou transcrição fonética do plural do substantivo e alterou a ordem dos campos de um item substantivo.",
   "type": "object",
   "required": [
     "substantivos"
@@ -11,14 +14,19 @@
         "type": "object",
         "required": [
           "nome",
+          "transcricao_ipa_singular",
           "genero",
           "plural",
-          "transcricao_ipa",
+          "transcricao_ipa_plural",
           "traducao",
           "particularidades"
         ],
         "properties": {
           "nome": {
+            "type": "string",
+            "minLength": 1
+          },
+          "transcricao_ipa_singular": {
             "type": "string",
             "minLength": 1
           },
@@ -34,7 +42,7 @@
             "type": "string",
             "minLength": 1
           },
-          "transcricao_ipa": {
+          "transcricao_ipa_plural": {
             "type": "string",
             "minLength": 1
           },
