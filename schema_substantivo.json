@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "substantivos"
+  ],
+  "properties": {
+    "substantivos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "nome",
+          "genero",
+          "plural",
+          "transcricao_ipa",
+          "traducao",
+          "particularidades"
+        ],
+        "properties": {
+          "nome": {
+            "type": "string",
+            "minLength": 1
+          },
+          "genero": {
+            "type": "string",
+            "enum": [
+              "Masculino",
+              "Feminino",
+              "Neutro"
+            ]
+          },
+          "plural": {
+            "type": "string",
+            "minLength": 1
+          },
+          "transcricao_ipa": {
+            "type": "string",
+            "minLength": 1
+          },
+          "traducao": {
+            "type": "string",
+            "minLength": 1
+          },
+          "particularidades": {
+            "type": [
+              "object",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
