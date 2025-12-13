@@ -46,6 +46,17 @@
       "transcricao_ipa_plural": "[ˈʃtɛtə]",
       "traducao": "cidade",
       "particularidades": null
+    },
+    {
+      "nome": "Auto",
+      "transcricao_ipa_singular": "[ˈaw.tu]",
+      "genero": "Masculino",
+      "plural": "Autos",
+      "transcricao_ipa_plural": "[ˈaw.tus]",
+      "traducao": "Car",
+      "particularidades": {
+        "nota": "Forma abreviada de 'automóvel'."
+      }
     }
   ]
 }
