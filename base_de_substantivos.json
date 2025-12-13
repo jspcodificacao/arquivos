@@ -6,15 +6,19 @@
       "plural": "Balls",
       "transcricao_ipa": "[bɔːl]",
       "traducao": "Bola",
-      "particularidades": null
+      "particularidades": null,
+      "transcricao_ipa_singular": "[bɔːl]",
+      "transcricao_ipa_plural": "[bɔːlz]"
     },
     {
       "nome": "Hund",
       "genero": "Masculino",
       "plural": "Hunde",
       "transcricao_ipa": "[hʊnt]",
-      "traducao": "Cão",
-      "particularidades": null
+      "traducao": "cão",
+      "particularidades": null,
+      "transcricao_ipa_singular": "[hʊnt]",
+      "transcricao_ipa_plural": "[ˈhʊndə]"
     }
   ]
 }
