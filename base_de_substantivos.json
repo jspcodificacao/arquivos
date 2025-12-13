@@ -1,1 +1,14 @@
-{}
+{
+  "Haus": {
+    "substantivos": [
+      {
+        "nome": "Haus",
+        "genero": "Neutro",
+        "plural": "Häuser",
+        "transcricao_ipa": "[haʊ̯s]",
+        "traducao": "Casa",
+        "particularidades": null
+      }
+    ]
+  }
+}
