@@ -95,6 +95,60 @@
       "particularidades": {
         "nota": "pode see traduzido como gato quando não se sabe se é um gato macho ou fêmea"
       }
+    },
+    {
+      "nome": "Mann",
+      "transcricao_ipa_singular": "[man]",
+      "genero": "Masculino",
+      "plural": "Männer",
+      "transcricao_ipa_plural": "[ˈmɛnɐ]",
+      "traducao": "homem",
+      "particularidades": null
+    },
+    {
+      "nome": "Frau",
+      "transcricao_ipa_singular": "[fʁaʊ̯]",
+      "genero": "Feminino",
+      "plural": "Frauen",
+      "transcricao_ipa_plural": "[ˈfʁaʊ̯ən]",
+      "traducao": "mulher",
+      "particularidades": null
+    },
+    {
+      "nome": "Vater",
+      "transcricao_ipa_singular": "[ˈfaːtɐ]",
+      "genero": "Masculino",
+      "plural": "Väter",
+      "transcricao_ipa_plural": "[ˈfɛːtɐ]",
+      "traducao": "pai",
+      "particularidades": null
+    },
+    {
+      "nome": "Muter",
+      "transcricao_ipa_singular": "[ˈmʊtɐ]",
+      "genero": "Feminino",
+      "plural": "Mütter",
+      "transcricao_ipa_plural": "[ˈmʏtɐ]",
+      "traducao": "mãe",
+      "particularidades": null
+    },
+    {
+      "nome": "Bruder",
+      "transcricao_ipa_singular": "[ˈbʁuːdɐ]",
+      "genero": "Masculino",
+      "plural": "Brüder",
+      "transcricao_ipa_plural": "[ˈbʁyːdɐ]",
+      "traducao": "irmão",
+      "particularidades": null
+    },
+    {
+      "nome": "Schwester",
+      "transcricao_ipa_singular": "[ˈʃvɛstɐ]",
+      "genero": "Feminino",
+      "plural": "Schwestern",
+      "transcricao_ipa_plural": "[ˈʃvɛstɐn]",
+      "traducao": "irmã",
+      "particularidades": null
     }
   ]
 }
