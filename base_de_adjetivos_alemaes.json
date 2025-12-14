@@ -302,6 +302,309 @@
           }
         }
       }
+    },
+    {
+      "lema": "klein",
+      "lema_ipa": "[klaɪ̯n]",
+      "traducao": "pequeno; baixo (para pessoas)",
+      "funcoes": [
+        "atributiva",
+        "predicativa",
+        "adverbial"
+      ],
+      "particularidades": null,
+      "graus": {
+        "positiv": {
+          "forma": "klein",
+          "ipa": "[klaɪ̯n]"
+        },
+        "komparativ": {
+          "forma": "kleiner",
+          "ipa": "[ˈklaɪ̯nɐ]"
+        },
+        "superlativ": {
+          "atributivo": {
+            "forma": "kleinste",
+            "ipa": "[ˈklaɪ̯nstə]"
+          },
+          "predicativo": {
+            "forma": "am kleinsten",
+            "ipa": "[am ˈklaɪ̯nstn̩]"
+          }
+        }
+      },
+      "declinacoes": {
+        "forte": {
+          "nominativ": {
+            "singular": {
+              "masculino": {
+                "forma": "kleiner",
+                "ipa": "[ˈklaɪ̯nɐ]"
+              },
+              "feminino": {
+                "forma": "kleine",
+                "ipa": "[ˈklaɪ̯nə]"
+              },
+              "neutro": {
+                "forma": "kleines",
+                "ipa": "[ˈklaɪ̯nəs]"
+              }
+            },
+            "plural": {
+              "forma": {
+                "forma": "kleine",
+                "ipa": "[ˈklaɪ̯nə]"
+              }
+            }
+          },
+          "akkusativ": {
+            "singular": {
+              "masculino": {
+                "forma": "kleinen",
+                "ipa": "[ˈklaɪ̯nən]"
+              },
+              "feminino": {
+                "forma": "kleine",
+                "ipa": "[ˈklaɪ̯nə]"
+              },
+              "neutro": {
+                "forma": "kleines",
+                "ipa": "[ˈklaɪ̯nəs]"
+              }
+            },
+            "plural": {
+              "forma": {
+                "forma": "kleine",
+                "ipa": "[ˈklaɪ̯nə]"
+              }
+            }
+          },
+          "dativ": {
+            "singular": {
+              "masculino": {
+                "forma": "kleinem",
+                "ipa": "[ˈklaɪ̯nəm]"
+              },
+              "feminino": {
+                "forma": "kleiner",
+                "ipa": "[ˈklaɪ̯nɐ]"
+              },
+              "neutro": {
+                "forma": "kleinem",
+                "ipa": "[ˈklaɪ̯nəm]"
+              }
+            },
+            "plural": {
+              "forma": {
+                "forma": "kleinen",
+                "ipa": "[ˈklaɪ̯nən]"
+              }
+            }
+          },
+          "genitiv": {
+            "singular": {
+              "masculino": {
+                "forma": "kleinen",
+                "ipa": "[ˈklaɪ̯nən]"
+              },
+              "feminino": {
+                "forma": "kleiner",
+                "ipa": "[ˈklaɪ̯nɐ]"
+              },
+              "neutro": {
+                "forma": "kleinen",
+                "ipa": "[ˈklaɪ̯nən]"
+              }
+            },
+            "plural": {
+              "forma": {
+                "forma": "kleiner",
+                "ipa": "[ˈklaɪ̯nɐ]"
+              }
+            }
+          }
+        },
+        "fraca": {
+          "nominativ": {
+            "singular": {
+              "masculino": {
+                "forma": "kleine",
+                "ipa": "[ˈklaɪ̯nə]"
+              },
+              "feminino": {
+                "forma": "kleine",
+                "ipa": "[ˈklaɪ̯nə]"
+              },
+              "neutro": {
+                "forma": "kleine",
+                "ipa": "[ˈklaɪ̯nə]"
+              }
+            },
+            "plural": {
+              "forma": {
+                "forma": "kleinen",
+                "ipa": "[ˈklaɪ̯nən]"
+              }
+            }
+          },
+          "akkusativ": {
+            "singular": {
+              "masculino": {
+                "forma": "kleinen",
+                "ipa": "[ˈklaɪ̯nən]"
+              },
+              "feminino": {
+                "forma": "kleine",
+                "ipa": "[ˈklaɪ̯nə]"
+              },
+              "neutro": {
+                "forma": "kleine",
+                "ipa": "[ˈklaɪ̯nə]"
+              }
+            },
+            "plural": {
+              "forma": {
+                "forma": "kleinen",
+                "ipa": "[ˈklaɪ̯nən]"
+              }
+            }
+          },
+          "dativ": {
+            "singular": {
+              "masculino": {
+                "forma": "kleinen",
+                "ipa": "[ˈklaɪ̯nən]"
+              },
+              "feminino": {
+                "forma": "kleinen",
+                "ipa": "[ˈklaɪ̯nən]"
+              },
+              "neutro": {
+                "forma": "kleinen",
+                "ipa": "[ˈklaɪ̯nən]"
+              }
+            },
+            "plural": {
+              "forma": {
+                "forma": "kleinen",
+                "ipa": "[ˈklaɪ̯nən]"
+              }
+            }
+          },
+          "genitiv": {
+            "singular": {
+              "masculino": {
+                "forma": "kleinen",
+                "ipa": "[ˈklaɪ̯nən]"
+              },
+              "feminino": {
+                "forma": "kleinen",
+                "ipa": "[ˈklaɪ̯nən]"
+              },
+              "neutro": {
+                "forma": "kleinen",
+                "ipa": "[ˈklaɪ̯nən]"
+              }
+            },
+            "plural": {
+              "forma": {
+                "forma": "kleinen",
+                "ipa": "[ˈklaɪ̯nən]"
+              }
+            }
+          }
+        },
+        "mista": {
+          "nominativ": {
+            "singular": {
+              "masculino": {
+                "forma": "kleiner",
+                "ipa": "[ˈklaɪ̯nɐ]"
+              },
+              "feminino": {
+                "forma": "kleine",
+                "ipa": "[ˈklaɪ̯nə]"
+              },
+              "neutro": {
+                "forma": "kleines",
+                "ipa": "[ˈklaɪ̯nəs]"
+              }
+            },
+            "plural": {
+              "forma": {
+                "forma": "kleinen",
+                "ipa": "[ˈklaɪ̯nən]"
+              }
+            }
+          },
+          "akkusativ": {
+            "singular": {
+              "masculino": {
+                "forma": "kleinen",
+                "ipa": "[ˈklaɪ̯nən]"
+              },
+              "feminino": {
+                "forma": "kleine",
+                "ipa": "[ˈklaɪ̯nə]"
+              },
+              "neutro": {
+                "forma": "kleines",
+                "ipa": "[ˈklaɪ̯nəs]"
+              }
+            },
+            "plural": {
+              "forma": {
+                "forma": "kleinen",
+                "ipa": "[ˈklaɪ̯nən]"
+              }
+            }
+          },
+          "dativ": {
+            "singular": {
+              "masculino": {
+                "forma": "kleinen",
+                "ipa": "[ˈklaɪ̯nən]"
+              },
+              "feminino": {
+                "forma": "kleinen",
+                "ipa": "[ˈklaɪ̯nən]"
+              },
+              "neutro": {
+                "forma": "kleinen",
+                "ipa": "[ˈklaɪ̯nən]"
+              }
+            },
+            "plural": {
+              "forma": {
+                "forma": "kleinen",
+                "ipa": "[ˈklaɪ̯nən]"
+              }
+            }
+          },
+          "genitiv": {
+            "singular": {
+              "masculino": {
+                "forma": "kleinen",
+                "ipa": "[ˈklaɪ̯nən]"
+              },
+              "feminino": {
+                "forma": "kleinen",
+                "ipa": "[ˈklaɪ̯nən]"
+              },
+              "neutro": {
+                "forma": "kleinen",
+                "ipa": "[ˈklaɪ̯nən]"
+              }
+            },
+            "plural": {
+              "forma": {
+                "forma": "kleinen",
+                "ipa": "[ˈklaɪ̯nən]"
+              }
+            }
+          }
+        }
+      }
     }
   ]
 }
