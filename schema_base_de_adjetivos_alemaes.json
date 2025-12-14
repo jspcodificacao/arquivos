@@ -1,1 +1,175 @@
-
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/jspcodificacao/arquivos/refs/heads/main/schema_base_de_adjetivos_alemaes.json",
+  "versao": "1.1",
+  "title": "Base de Adjetivos do Alemão",
+  "description": "Schema para modelar adjetivos alemães de forma linguisticamente correta, considerando função sintática, grau e declinação (caso, gênero, número e tipo de declinação).",
+  "type": "object",
+  "required": ["adjetivos"],
+  "properties": {
+    "adjetivos": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/adjetivo"
+      }
+    }
+  },
+  "definitions": {
+    "adjetivo": {
+      "type": "object",
+      "required": [
+        "lema",
+        "lema_ipa",
+        "funcoes",
+        "graus",
+        "declinacoes"
+      ],
+      "properties": {
+        "lema": {
+          "type": "string",
+          "description": "Forma base não declinada do adjetivo (Grundform / unflektierte Form)."
+        },
+        "lema_ipa": {
+          "type": "string",
+          "description": "Transcrição fonética IPA da forma base."
+        },
+        "funcoes": {
+          "type": "array",
+          "description": "Funções sintáticas em que o adjetivo pode ocorrer.",
+          "items": {
+            "type": "string",
+            "enum": ["atributiva", "predicativa", "adverbial"]
+          },
+          "minItems": 1
+        },
+        "graus": {
+          "type": "object",
+          "description": "Graus do adjetivo.",
+          "required": ["positiv"],
+          "properties": {
+            "positiv": {
+              "$ref": "#/definitions/grau"
+            },
+            "komparativ": {
+              "$ref": "#/definitions/grau"
+            },
+            "superlativ": {
+              "$ref": "#/definitions/superlativ"
+            }
+          }
+        },
+        "declinacoes": {
+          "type": "object",
+          "description": "Matriz de declinação para uso atributivo.",
+          "required": ["forte", "fraca", "mista"],
+          "properties": {
+            "forte": {
+              "$ref": "#/definitions/declinacao"
+            },
+            "fraca": {
+              "$ref": "#/definitions/declinacao"
+            },
+            "mista": {
+              "$ref": "#/definitions/declinacao"
+            }
+          }
+        }
+      }
+    },
+    "grau": {
+      "type": "object",
+      "required": ["forma", "ipa"],
+      "properties": {
+        "forma": {
+          "type": "string",
+          "description": "Forma textual do grau do adjetivo."
+        },
+        "ipa": {
+          "type": "string",
+          "description": "Transcrição fonética IPA do grau do adjetivo."
+        }
+      }
+    },
+    "superlativ": {
+      "type": "object",
+      "description": "Superlativo pode ocorrer em forma atributiva e predicativa.",
+      "required": ["atributivo", "predicativo"],
+      "properties": {
+        "atributivo": {
+          "$ref": "#/definitions/grau"
+        },
+        "predicativo": {
+          "$ref": "#/definitions/grau"
+        }
+      }
+    },
+    "declinacao": {
+      "type": "object",
+      "description": "Declinação do adjetivo por caso, gênero e número.",
+      "properties": {
+        "nominativ": {
+          "$ref": "#/definitions/casos"
+        },
+        "akkusativ": {
+          "$ref": "#/definitions/casos"
+        },
+        "dativ": {
+          "$ref": "#/definitions/casos"
+        },
+        "genitiv": {
+          "$ref": "#/definitions/casos"
+        }
+      }
+    },
+    "casos": {
+      "type": "object",
+      "required": ["singular", "plural"],
+      "properties": {
+        "singular": {
+          "$ref": "#/definitions/singular"
+        },
+        "plural": {
+          "$ref": "#/definitions/plural"
+        }
+      }
+    },
+    "singular": {
+      "type": "object",
+      "required": ["masculino", "feminino", "neutro"],
+      "properties": {
+        "masculino": {
+          "$ref": "#/definitions/forma_com_ipa"
+        },
+        "feminino": {
+          "$ref": "#/definitions/forma_com_ipa"
+        },
+        "neutro": {
+          "$ref": "#/definitions/forma_com_ipa"
+        }
+      }
+    },
+    "plural": {
+      "type": "object",
+      "required": ["forma"],
+      "properties": {
+        "forma": {
+          "$ref": "#/definitions/forma_com_ipa"
+        }
+      }
+    },
+    "forma_com_ipa": {
+      "type": "object",
+      "required": ["forma", "ipa"],
+      "properties": {
+        "forma": {
+          "type": "string",
+          "description": "Forma flexionada do adjetivo."
+        },
+        "ipa": {
+          "type": "string",
+          "description": "Transcrição fonética IPA da forma flexionada."
+        }
+      }
+    }
+  }
+} 
