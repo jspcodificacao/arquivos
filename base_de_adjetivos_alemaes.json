@@ -1,1 +1,282 @@
-{}
+[
+  {
+    "lema": "groß",
+    "lema_ipa": "[ɡʁoːs]",
+    "traducao": "grande",
+    "funcoes": [
+      "atributiva",
+      "predicativa",
+      "adverbial"
+    ],
+    "graus": {
+      "positiv": {
+        "forma": "groß",
+        "ipa": "[ɡʁoːs]"
+      },
+      "komparativ": {
+        "forma": "größer",
+        "ipa": "[ˈɡʁøːsɐ]"
+      },
+      "superlativ": {
+        "atributivo": {
+          "forma": "größte-",
+          "ipa": "[ˈɡʁøːstə]"
+        },
+        "predicativo": {
+          "forma": "am größten",
+          "ipa": "[am ˈɡʁøːstən]"
+        }
+      }
+    },
+    "declinacoes": {
+      "forte": {
+        "nominativ": {
+          "singular": {
+            "masculino": {
+              "forma": "großer",
+              "ipa": "[ˈɡʁoːsɐ]"
+            },
+            "feminino": {
+              "forma": "große",
+              "ipa": "[ˈɡʁoːsə]"
+            },
+            "neutro": {
+              "forma": "großes",
+              "ipa": "[ˈɡʁoːsəs]"
+            }
+          },
+          "plural": {
+            "forma": "große",
+            "ipa": "[ˈɡʁoːsə]"
+          }
+        },
+        "akkusativ": {
+          "singular": {
+            "masculino": {
+              "forma": "großen",
+              "ipa": "[ˈɡʁoːsən]"
+            },
+            "feminino": {
+              "forma": "große",
+              "ipa": "[ˈɡʁoːsə]"
+            },
+            "neutro": {
+              "forma": "großes",
+              "ipa": "[ˈɡʁoːsəs]"
+            }
+          },
+          "plural": {
+            "forma": "große",
+            "ipa": "[ˈɡʁoːsə]"
+          }
+        },
+        "dativ": {
+          "singular": {
+            "masculino": {
+              "forma": "großem",
+              "ipa": "[ˈɡʁoːsəm]"
+            },
+            "feminino": {
+              "forma": "großer",
+              "ipa": "[ˈɡʁoːsɐ]"
+            },
+            "neutro": {
+              "forma": "großem",
+              "ipa": "[ˈɡʁoːsəm]"
+            }
+          },
+          "plural": {
+            "forma": "großen",
+            "ipa": "[ˈɡʁoːsən]"
+          }
+        },
+        "genitiv": {
+          "singular": {
+            "masculino": {
+              "forma": "großen",
+              "ipa": "[ˈɡʁoːsən]"
+            },
+            "feminino": {
+              "forma": "großer",
+              "ipa": "[ˈɡʁoːsɐ]"
+            },
+            "neutro": {
+              "forma": "großen",
+              "ipa": "[ˈɡʁoːsən]"
+            }
+          },
+          "plural": {
+            "forma": "großer",
+            "ipa": "[ˈɡʁoːsɐ]"
+          }
+        }
+      },
+      "fraca": {
+        "nominativ": {
+          "singular": {
+            "masculino": {
+              "forma": "große",
+              "ipa": "[ˈɡʁoːsə]"
+            },
+            "feminino": {
+              "forma": "große",
+              "ipa": "[ˈɡʁoːsə]"
+            },
+            "neutro": {
+              "forma": "große",
+              "ipa": "[ˈɡʁoːsə]"
+            }
+          },
+          "plural": {
+            "forma": "großen",
+            "ipa": "[ˈɡʁoːsən]"
+          }
+        },
+        "akkusativ": {
+          "singular": {
+            "masculino": {
+              "forma": "großen",
+              "ipa": "[ˈɡʁoːsən]"
+            },
+            "feminino": {
+              "forma": "große",
+              "ipa": "[ˈɡʁoːsə]"
+            },
+            "neutro": {
+              "forma": "große",
+              "ipa": "[ˈɡʁoːsə]"
+            }
+          },
+          "plural": {
+            "forma": "großen",
+            "ipa": "[ˈɡʁoːsən]"
+          }
+        },
+        "dativ": {
+          "singular": {
+            "masculino": {
+              "forma": "großen",
+              "ipa": "[ˈɡʁoːsən]"
+            },
+            "feminino": {
+              "forma": "großen",
+              "ipa": "[ˈɡʁoːsən]"
+            },
+            "neutro": {
+              "forma": "großen",
+              "ipa": "[ˈɡʁoːsən]"
+            }
+          },
+          "plural": {
+            "forma": "großen",
+            "ipa": "[ˈɡʁoːsən]"
+          }
+        },
+        "genitiv": {
+          "singular": {
+            "masculino": {
+              "forma": "großen",
+              "ipa": "[ˈɡʁoːsən]"
+            },
+            "feminino": {
+              "forma": "großen",
+              "ipa": "[ˈɡʁoːsən]"
+            },
+            "neutro": {
+              "forma": "großen",
+              "ipa": "[ˈɡʁoːsən]"
+            }
+          },
+          "plural": {
+            "forma": "großen",
+            "ipa": "[ˈɡʁoːsən]"
+          }
+        }
+      },
+      "mista": {
+        "nominativ": {
+          "singular": {
+            "masculino": {
+              "forma": "großer",
+              "ipa": "[ˈɡʁoːsɐ]"
+            },
+            "feminino": {
+              "forma": "große",
+              "ipa": "[ˈɡʁoːsə]"
+            },
+            "neutro": {
+              "forma": "großes",
+              "ipa": "[ˈɡʁoːsəs]"
+            }
+          },
+          "plural": {
+            "forma": "großen",
+            "ipa": "[ˈɡʁoːsən]"
+          }
+        },
+        "akkusativ": {
+          "singular": {
+            "masculino": {
+              "forma": "großen",
+              "ipa": "[ˈɡʁoːsən]"
+            },
+            "feminino": {
+              "forma": "große",
+              "ipa": "[ˈɡʁoːsə]"
+            },
+            "neutro": {
+              "forma": "großes",
+              "ipa": "[ˈɡʁoːsəs]"
+            }
+          },
+          "plural": {
+            "forma": "großen",
+            "ipa": "[ˈɡʁoːsən]"
+          }
+        },
+        "dativ": {
+          "singular": {
+            "masculino": {
+              "forma": "großen",
+              "ipa": "[ˈɡʁoːsən]"
+            },
+            "feminino": {
+              "forma": "großen",
+              "ipa": "[ˈɡʁoːsən]"
+            },
+            "neutro": {
+              "forma": "großen",
+              "ipa": "[ˈɡʁoːsən]"
+            }
+          },
+          "plural": {
+            "forma": "großen",
+            "ipa": "[ˈɡʁoːsən]"
+          }
+        },
+        "genitiv": {
+          "singular": {
+            "masculino": {
+              "forma": "großen",
+              "ipa": "[ˈɡʁoːsən]"
+            },
+            "feminino": {
+              "forma": "großen",
+              "ipa": "[ˈɡʁoːsən]"
+            },
+            "neutro": {
+              "forma": "großen",
+              "ipa": "[ˈɡʁoːsən]"
+            }
+          },
+          "plural": {
+            "forma": "großen",
+            "ipa": "[ˈɡʁoːsən]"
+          }
+        }
+      }
+    },
+    "particularidades": "Adjetivo irregular na formação do comparativo e superlativo (com umlaut). O 'ß' permanece antes de vogal devido à vogal longa.",
+    "id": "0f7792fb-8f02-4804-8124-c92fd3d874ae"
+  }
+]
