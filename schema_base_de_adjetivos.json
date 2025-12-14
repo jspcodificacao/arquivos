@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://exemplo.org/schema/adjetivos-alemao.json",
-  "versao": "1.0",
+  "$id": "https://raw.githubusercontent.com/jspcodificacao/arquivos/refs/heads/main/schema_base_de_adjetivos.json",
+  "versao": "1.1",
   "title": "Base de Adjetivos do Alemão",
   "description": "Schema para modelar adjetivos alemães de forma linguisticamente correta, considerando função sintática, grau e declinação (caso, gênero, número e tipo de declinação).",
   "type": "object",
