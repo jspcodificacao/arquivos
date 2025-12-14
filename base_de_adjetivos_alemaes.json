@@ -1,1 +1,308 @@
-{}
+{
+  "groß": {
+    "adjetivos": [
+      {
+        "lema": "groß",
+        "lema_ipa": "[ɡʁoːs]",
+        "funcoes": [
+          "atributiva",
+          "predicativa",
+          "adverbial"
+        ],
+        "graus": {
+          "positiv": {
+            "forma": "groß",
+            "ipa": "[ɡʁoːs]"
+          },
+          "komparativ": {
+            "forma": "größer",
+            "ipa": "[ˈɡʁøːsɐ]"
+          },
+          "superlativ": {
+            "atributivo": {
+              "forma": "größte",
+              "ipa": "[ˈɡʁøːstə]"
+            },
+            "predicativo": {
+              "forma": "am größten",
+              "ipa": "[am ˈɡʁøːstn̩]"
+            }
+          }
+        },
+        "declinacoes": {
+          "forte": {
+            "nominativ": {
+              "singular": {
+                "masculino": {
+                  "forma": "großer",
+                  "ipa": "[ˈɡʁoːsɐ]"
+                },
+                "feminino": {
+                  "forma": "große",
+                  "ipa": "[ˈɡʁoːsə]"
+                },
+                "neutro": {
+                  "forma": "großes",
+                  "ipa": "[ˈɡʁoːsəs]"
+                }
+              },
+              "plural": {
+                "forma": {
+                  "forma": "große",
+                  "ipa": "[ˈɡʁoːsə]"
+                }
+              }
+            },
+            "akkusativ": {
+              "singular": {
+                "masculino": {
+                  "forma": "großen",
+                  "ipa": "[ˈɡʁoːsn̩]"
+                },
+                "feminino": {
+                  "forma": "große",
+                  "ipa": "[ˈɡʁoːsə]"
+                },
+                "neutro": {
+                  "forma": "großes",
+                  "ipa": "[ˈɡʁoːsəs]"
+                }
+              },
+              "plural": {
+                "forma": {
+                  "forma": "große",
+                  "ipa": "[ˈɡʁoːsə]"
+                }
+              }
+            },
+            "dativ": {
+              "singular": {
+                "masculino": {
+                  "forma": "großem",
+                  "ipa": "[ˈɡʁoːsm̩]"
+                },
+                "feminino": {
+                  "forma": "großer",
+                  "ipa": "[ˈɡʁoːsɐ]"
+                },
+                "neutro": {
+                  "forma": "großem",
+                  "ipa": "[ˈɡʁoːsm̩]"
+                }
+              },
+              "plural": {
+                "forma": {
+                  "forma": "großen",
+                  "ipa": "[ˈɡʁoːsn̩]"
+                }
+              }
+            },
+            "genitiv": {
+              "singular": {
+                "masculino": {
+                  "forma": "großen",
+                  "ipa": "[ˈɡʁoːsn̩]"
+                },
+                "feminino": {
+                  "forma": "großer",
+                  "ipa": "[ˈɡʁoːsɐ]"
+                },
+                "neutro": {
+                  "forma": "großen",
+                  "ipa": "[ˈɡʁoːsn̩]"
+                }
+              },
+              "plural": {
+                "forma": {
+                  "forma": "großer",
+                  "ipa": "[ˈɡʁoːsɐ]"
+                }
+              }
+            }
+          },
+          "fraca": {
+            "nominativ": {
+              "singular": {
+                "masculino": {
+                  "forma": "große",
+                  "ipa": "[ˈɡʁoːsə]"
+                },
+                "feminino": {
+                  "forma": "große",
+                  "ipa": "[ˈɡʁoːsə]"
+                },
+                "neutro": {
+                  "forma": "große",
+                  "ipa": "[ˈɡʁoːsə]"
+                }
+              },
+              "plural": {
+                "forma": {
+                  "forma": "großen",
+                  "ipa": "[ˈɡʁoːsn̩]"
+                }
+              }
+            },
+            "akkusativ": {
+              "singular": {
+                "masculino": {
+                  "forma": "großen",
+                  "ipa": "[ˈɡʁoːsn̩]"
+                },
+                "feminino": {
+                  "forma": "große",
+                  "ipa": "[ˈɡʁoːsə]"
+                },
+                "neutro": {
+                  "forma": "große",
+                  "ipa": "[ˈɡʁoːsə]"
+                }
+              },
+              "plural": {
+                "forma": {
+                  "forma": "großen",
+                  "ipa": "[ˈɡʁoːsn̩]"
+                }
+              }
+            },
+            "dativ": {
+              "singular": {
+                "masculino": {
+                  "forma": "großen",
+                  "ipa": "[ˈɡʁoːsn̩]"
+                },
+                "feminino": {
+                  "forma": "großen",
+                  "ipa": "[ˈɡʁoːsn̩]"
+                },
+                "neutro": {
+                  "forma": "großen",
+                  "ipa": "[ˈɡʁoːsn̩]"
+                }
+              },
+              "plural": {
+                "forma": {
+                  "forma": "großen",
+                  "ipa": "[ˈɡʁoːsn̩]"
+                }
+              }
+            },
+            "genitiv": {
+              "singular": {
+                "masculino": {
+                  "forma": "großen",
+                  "ipa": "[ˈɡʁoːsn̩]"
+                },
+                "feminino": {
+                  "forma": "großen",
+                  "ipa": "[ˈɡʁoːsn̩]"
+                },
+                "neutro": {
+                  "forma": "großen",
+                  "ipa": "[ˈɡʁoːsn̩]"
+                }
+              },
+              "plural": {
+                "forma": {
+                  "forma": "großen",
+                  "ipa": "[ˈɡʁoːsn̩]"
+                }
+              }
+            }
+          },
+          "mista": {
+            "nominativ": {
+              "singular": {
+                "masculino": {
+                  "forma": "großer",
+                  "ipa": "[ˈɡʁoːsɐ]"
+                },
+                "feminino": {
+                  "forma": "große",
+                  "ipa": "[ˈɡʁoːsə]"
+                },
+                "neutro": {
+                  "forma": "großes",
+                  "ipa": "[ˈɡʁoːsəs]"
+                }
+              },
+              "plural": {
+                "forma": {
+                  "forma": "großen",
+                  "ipa": "[ˈɡʁoːsn̩]"
+                }
+              }
+            },
+            "akkusativ": {
+              "singular": {
+                "masculino": {
+                  "forma": "großen",
+                  "ipa": "[ˈɡʁoːsn̩]"
+                },
+                "feminino": {
+                  "forma": "große",
+                  "ipa": "[ˈɡʁoːsə]"
+                },
+                "neutro": {
+                  "forma": "großes",
+                  "ipa": "[ˈɡʁoːsəs]"
+                }
+              },
+              "plural": {
+                "forma": {
+                  "forma": "großen",
+                  "ipa": "[ˈɡʁoːsn̩]"
+                }
+              }
+            },
+            "dativ": {
+              "singular": {
+                "masculino": {
+                  "forma": "großen",
+                  "ipa": "[ˈɡʁoːsn̩]"
+                },
+                "feminino": {
+                  "forma": "großen",
+                  "ipa": "[ˈɡʁoːsn̩]"
+                },
+                "neutro": {
+                  "forma": "großen",
+                  "ipa": "[ˈɡʁoːsn̩]"
+                }
+              },
+              "plural": {
+                "forma": {
+                  "forma": "großen",
+                  "ipa": "[ˈɡʁoːsn̩]"
+                }
+              }
+            },
+            "genitiv": {
+              "singular": {
+                "masculino": {
+                  "forma": "großen",
+                  "ipa": "[ˈɡʁoːsn̩]"
+                },
+                "feminino": {
+                  "forma": "großen",
+                  "ipa": "[ˈɡʁoːsn̩]"
+                },
+                "neutro": {
+                  "forma": "großen",
+                  "ipa": "[ˈɡʁoːsn̩]"
+                }
+              },
+              "plural": {
+                "forma": {
+                  "forma": "großen",
+                  "ipa": "[ˈɡʁoːsn̩]"
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "adjective": "groß"
+  }
+}
