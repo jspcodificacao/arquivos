@@ -33,6 +33,17 @@
           "type": "string",
           "description": "Transcrição fonética IPA da forma base."
         },
+        "traducao": {
+          "type": "string",
+          "description": "Tradução para o português do adjetivo em alemão."
+        },
+        "particularidades": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "description": "Um objeto JSON que contenha qualquer informação adicional relevante sobre o adjetivo no contexto da língua alemã ou no contexto da língua portuguesa."
+        },
         "funcoes": {
           "type": "array",
           "description": "Funções sintáticas em que o adjetivo pode ocorrer.",
