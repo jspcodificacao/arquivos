@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Schema de uma base de dados de adjetivos no idioma alemão.",  
+    "versao": "1.0",
+    "type": object,
+    "properties": {
+
+    }
+    "required": [
+        "adjetivos"
+    ]
+    "properties
+    "adjetivos": []
+}
+
+
+
+        {
+            "nome": string, # O adjetivo escrito no caso nominativo
+            "nome_ipa": string, # A transcrição fonética IPA do adjetivo no singular no caso nominativo
+            "plural": string, # O plural do adjetivo no caso nominativo
+            "plural_ipa": string, # A transcrição fonética IPA do plural do adjetivo no caso nominativo
+            "declinacao_dativo": string, # O adjetivo declinado no caso dativo
+            "declinacao_dativo_ipa": string, # A transcrição fonética IPA do adjetivo no caso dativo
+            "declinacao_acusativo": string, # O adjetivo declinado no caso acusativo
+            "declinacao_acusativo_ipa": string, # A transcrição fonética IPA do adjetivo declinado no caso acusativo
+            "declinacao_genitivo": string, # O adjetivo declinado no caso genitivo
+            "declinacao_genitivo_ipa": string # A transcrição fonética IPA do adjetivo declinado no caso genitivo
+        }
+    
