@@ -605,6 +605,309 @@
           }
         }
       }
+    },
+    {
+      "lema": "mittelgroß",
+      "lema_ipa": "[ˈmɪtl̩ˌɡʁoːs]",
+      "traducao": "de tamanho médio; de estatura média; mediano",
+      "funcoes": [
+        "atributiva",
+        "predicativa",
+        "adverbial"
+      ],
+      "particularidades": null,
+      "graus": {
+        "positiv": {
+          "forma": "mittelgroß",
+          "ipa": "[ˈmɪtl̩ˌɡʁoːs]"
+        },
+        "komparativ": {
+          "forma": "mittelgrößer",
+          "ipa": "[ˈmɪtl̩ˌɡʁœsɐ]"
+        },
+        "superlativ": {
+          "atributivo": {
+            "forma": "mittelgrößt-",
+            "ipa": "[ˈmɪtl̩ˌɡʁœst]"
+          },
+          "predicativo": {
+            "forma": "am mittelgrößten",
+            "ipa": "[am ˈmɪtl̩ˌɡʁœstn̩]"
+          }
+        }
+      },
+      "declinacoes": {
+        "forte": {
+          "nominativ": {
+            "singular": {
+              "masculino": {
+                "forma": "mittelgroßer",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsɐ]"
+              },
+              "feminino": {
+                "forma": "mittelgroße",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsə]"
+              },
+              "neutro": {
+                "forma": "mittelgroßes",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsəs]"
+              }
+            },
+            "plural": {
+              "forma": {
+                "forma": "mittelgroße",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsə]"
+              }
+            }
+          },
+          "akkusativ": {
+            "singular": {
+              "masculino": {
+                "forma": "mittelgroßen",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsn̩]"
+              },
+              "feminino": {
+                "forma": "mittelgroße",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsə]"
+              },
+              "neutro": {
+                "forma": "mittelgroßes",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsəs]"
+              }
+            },
+            "plural": {
+              "forma": {
+                "forma": "mittelgroße",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsə]"
+              }
+            }
+          },
+          "dativ": {
+            "singular": {
+              "masculino": {
+                "forma": "mittelgroßem",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsm̩]"
+              },
+              "feminino": {
+                "forma": "mittelgroßer",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsɐ]"
+              },
+              "neutro": {
+                "forma": "mittelgroßem",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsm̩]"
+              }
+            },
+            "plural": {
+              "forma": {
+                "forma": "mittelgroßen",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsn̩]"
+              }
+            }
+          },
+          "genitiv": {
+            "singular": {
+              "masculino": {
+                "forma": "mittelgroßen",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsn̩]"
+              },
+              "feminino": {
+                "forma": "mittelgroßer",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsɐ]"
+              },
+              "neutro": {
+                "forma": "mittelgroßen",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsn̩]"
+              }
+            },
+            "plural": {
+              "forma": {
+                "forma": "mittelgroßer",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsɐ]"
+              }
+            }
+          }
+        },
+        "fraca": {
+          "nominativ": {
+            "singular": {
+              "masculino": {
+                "forma": "mittelgroße",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsə]"
+              },
+              "feminino": {
+                "forma": "mittelgroße",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsə]"
+              },
+              "neutro": {
+                "forma": "mittelgroße",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsə]"
+              }
+            },
+            "plural": {
+              "forma": {
+                "forma": "mittelgroßen",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsn̩]"
+              }
+            }
+          },
+          "akkusativ": {
+            "singular": {
+              "masculino": {
+                "forma": "mittelgroßen",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsn̩]"
+              },
+              "feminino": {
+                "forma": "mittelgroße",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsə]"
+              },
+              "neutro": {
+                "forma": "mittelgroße",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsə]"
+              }
+            },
+            "plural": {
+              "forma": {
+                "forma": "mittelgroßen",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsn̩]"
+              }
+            }
+          },
+          "dativ": {
+            "singular": {
+              "masculino": {
+                "forma": "mittelgroßen",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsn̩]"
+              },
+              "feminino": {
+                "forma": "mittelgroßen",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsn̩]"
+              },
+              "neutro": {
+                "forma": "mittelgroßen",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsn̩]"
+              }
+            },
+            "plural": {
+              "forma": {
+                "forma": "mittelgroßen",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsn̩]"
+              }
+            }
+          },
+          "genitiv": {
+            "singular": {
+              "masculino": {
+                "forma": "mittelgroßen",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsn̩]"
+              },
+              "feminino": {
+                "forma": "mittelgroßen",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsn̩]"
+              },
+              "neutro": {
+                "forma": "mittelgroßen",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsn̩]"
+              }
+            },
+            "plural": {
+              "forma": {
+                "forma": "mittelgroßen",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsn̩]"
+              }
+            }
+          }
+        },
+        "mista": {
+          "nominativ": {
+            "singular": {
+              "masculino": {
+                "forma": "mittelgroßer",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsɐ]"
+              },
+              "feminino": {
+                "forma": "mittelgroße",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsə]"
+              },
+              "neutro": {
+                "forma": "mittelgroßes",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsəs]"
+              }
+            },
+            "plural": {
+              "forma": {
+                "forma": "mittelgroßen",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsn̩]"
+              }
+            }
+          },
+          "akkusativ": {
+            "singular": {
+              "masculino": {
+                "forma": "mittelgroßen",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsn̩]"
+              },
+              "feminino": {
+                "forma": "mittelgroße",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsə]"
+              },
+              "neutro": {
+                "forma": "mittelgroßes",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsəs]"
+              }
+            },
+            "plural": {
+              "forma": {
+                "forma": "mittelgroßen",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsn̩]"
+              }
+            }
+          },
+          "dativ": {
+            "singular": {
+              "masculino": {
+                "forma": "mittelgroßen",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsn̩]"
+              },
+              "feminino": {
+                "forma": "mittelgroßen",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsn̩]"
+              },
+              "neutro": {
+                "forma": "mittelgroßen",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsn̩]"
+              }
+            },
+            "plural": {
+              "forma": {
+                "forma": "mittelgroßen",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsn̩]"
+              }
+            }
+          },
+          "genitiv": {
+            "singular": {
+              "masculino": {
+                "forma": "mittelgroßen",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsn̩]"
+              },
+              "feminino": {
+                "forma": "mittelgroßen",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsn̩]"
+              },
+              "neutro": {
+                "forma": "mittelgroßen",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsn̩]"
+              }
+            },
+            "plural": {
+              "forma": {
+                "forma": "mittelgroßen",
+                "ipa": "[ˈmɪtl̩ˌɡʁoːsn̩]"
+              }
+            }
+          }
+        }
+      }
     }
   ]
 }
