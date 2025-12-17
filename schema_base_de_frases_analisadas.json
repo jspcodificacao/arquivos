@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://exemplo.com/schemas/frases-pt-br-v1.8.json",
-  "title": "Base de Frases - Português/Alemão (UD + NGB)",
-  "description": "Schema para armazenamento de frases com análise híbrida (Gramática Tradicional + Universal Dependencies via Stanza)",
+  "$id": "https://raw.githubusercontent.com/jspcodificacao/arquivos/refs/heads/main/schema_base_de_frases_analisadas.json",
+  "title": "Base de Frases - Português/Alemão (Versão 1.9)",
+  "description": "Schema para armazenamento de frases com análise híbrida (Stanza + Gemini) e alinhamento PT-DE",
   "type": "object",
   "required": [ "frases" ],
   "properties": {
@@ -36,6 +36,11 @@
           "type": "array",
           "items": { "$ref": "#/$defs/oracao" }
         },
+        "alinhamento_alemao": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/alinhamento" },
+          "description": "Mapeamento de IDs de tokens entre Português e Alemão"
+        },
         "tags_busca": { "type": "array", "items": { "type": "string" } },
         "notas": {
           "type": "array",
@@ -58,6 +63,18 @@
           "then": { "properties": { "oracoes": { "minItems": 2 } } }
         }
       ]
+    },
+    "alinhamento": {
+      "type": "object",
+      "required": ["id_token_pt", "id_token_de", "tipo_correspondencia"],
+      "properties": {
+        "id_token_pt": { "type": "integer", "description": "Referência ao id_global do token PT" },
+        "id_token_de": { "type": "integer", "description": "Referência ao id_token do token DE" },
+        "tipo_correspondencia": {
+          "type": "string",
+          "enum": [ "Exata", "Aproximada", "Um-para-Muitos", "Muitos-para-Um", "Sem Correspondência" ]
+        }
+      }
     },
     "oracao": {
       "type": "object",
@@ -126,7 +143,7 @@
         "analise_morfologica": {
           "type": "object",
           "properties": {
-            "modo": { "type": [ "string", "null" ], "enum": [ "Indicativo", "Subjuntivo", "Imperativo", null ] },
+            "modo": { "type": [ "string", "null" ], "enum": [ "Indicativo", "Subjuntivo", "Imperativo", "Condicional", null ] },
             "tempo": { "type": [ "string", "null" ] },
             "pessoa": { "type": [ "string", "null" ] },
             "numero": { "type": [ "string", "null" ] },
@@ -150,7 +167,7 @@
         },
         "xpos": { "type": "string" },
         "feats": { "type": "string" },
-        "id_pai": { "type": "integer", "minimum": 0, "description": "0 se for ROOT, >0 se for dependente" },
+        "id_pai": { "type": "integer", "minimum": 0 },
         "deprel": {
           "type": "string",
           "description": "Universal Dependency Relations",
@@ -170,8 +187,8 @@
         "termos_essenciais_da_oração": {
           "type": "object",
           "properties": {
-            "sujeito": { "type": "string" },
-            "predicado": { "type": "string" }
+            "sujeito": { "type": ["string", "null"] },
+            "predicado": { "type": ["string", "null"] }
           }
         },
         "termos_integrantes_da_oracao": {
@@ -185,7 +202,7 @@
               }
             },
             "complementos_nominais": { "type": "array", "items": { "type": "string" } },
-            "agente_da_passiva": { "type": "string" },
+            "agente_da_passiva": { "type": ["string", "null"] },
             "predicativos_do_sujeito": { "type": "array", "items": { "type": "string" } },
             "predicativos_do_objeto": { "type": "array", "items": { "type": "string" } }
           }
