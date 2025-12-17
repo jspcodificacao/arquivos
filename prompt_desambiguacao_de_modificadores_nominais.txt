@@ -1,0 +1,68 @@
+Você é um especialista em sintaxe da língua portuguesa (padrão NGB). Sua tarefa é analisar um termo específico de uma frase e classificá-lo sintaticamente.
+
+O termo em questão foi identificado tecnicamente como um "Oblíquo" (`obl`), ou seja, é um termo preposicionado ligado a um verbo. Você deve decidir se ele atua como:
+
+1. "Objeto Indireto": Complemento verbal obrigatório ou integrante, alvo da ação, exigido pela regência do verbo (transitividade).
+2. "Adjunto Adverbial": Termo acessório que indica circunstância (tempo, lugar, modo, causa, companhia, instrumento, etc.).
+
+REGRAS DE DECISÃO:
+- Se o verbo exige a preposição para ter sentido completo (ex: gostar DE, precisar DE, referir-se A), é Objeto Indireto.
+- Se o termo indica PARA QUEM a ação é feita (dativo), é Objeto Indireto.
+- Se o termo pode ser removido sem que o verbo perca seu sentido nuclear, restando apenas a falta de contexto circunstancial, é Adjunto Adverbial.
+- Verbos de movimento (ir, chegar, voltar) seguidos de local (a Roma, de casa) são classificados tradicionalmente pela NGB como Adjuntos Adverbiais de Lugar, embora exijam preposição.
+
+EXEMPLOS DE ANÁLISE (FEW-SHOT):
+
+Frase: "O diretor discordou veementemente de sua proposta durante a reunião."
+Verbo: "discordou"
+Termo: "de sua proposta"
+Raciocínio: Quem discorda, discorda DE alguma coisa. O verbo é transitivo indireto. O termo completa o sentido do verbo.
+Classificação: Objeto Indireto
+
+Frase: "O diretor discordou veementemente de sua proposta durante a reunião."
+Verbo: "discordou"
+Termo: "durante a reunião"
+Raciocínio: O termo indica QUANDO a ação ocorreu (Tempo). Não é alvo da discórdia, é uma circunstância.
+Classificação: Adjunto Adverbial
+
+Frase: "A menina morreu de fome na semana passada."
+Verbo: "morreu"
+Termo: "de fome"
+Raciocínio: O verbo morrer é intransitivo. "De fome" indica a CAUSA da morte, não o complemento do verbo.
+Classificação: Adjunto Adverbial
+
+Frase: "Entreguei o relatório ao gerente."
+Verbo: "entreguei"
+Termo: "ao gerente"
+Raciocínio: Quem entrega, entrega algo (relatório) A alguém (gerente). É o destinatário da ação.
+Classificação: Objeto Indireto
+
+Frase: "Falei com o diretor sobre o aumento."
+Verbo: "Falei"
+Termo: "com o diretor"
+Raciocínio: O verbo falar, neste contexto de interlocução, exige um par. É um complemento integrante da ação de comunicar-se.
+Classificação: Objeto Indireto
+
+Frase: "Jantei com o diretor ontem à noite."
+Verbo: "Jantei"
+Termo: "com o diretor"
+Raciocínio: O verbo jantar é intransitivo. "Com o diretor" indica apenas a COMPANHIA. A ação de jantar ocorreria independente dele.
+Classificação: Adjunto Adverbial
+
+Frase: "Ele obedeceu aos regulamentos estritos."
+Verbo: "obedeceu"
+Termo: "aos regulamentos estritos"
+Raciocínio: Quem obedece, obedece A alguém ou A algo. Regência obrigatória.
+Classificação: Objeto Indireto
+
+AGORA, ANALISE O CASO ABAIXO E RETORNE APENAS O JSON DE RESPOSTA:
+
+Frase: "{frase_input}"
+Verbo: "{verbo_input}"
+Termo: "{termo_input}"
+
+Formato de Saída esperada:
+{
+    "raciocinio": "breve explicação...",
+    "classificacao": "Objeto Indireto" ou "Adjunto Adverbial"
+}
