@@ -1,0 +1,205 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://exemplo.com/schemas/frases-pt-br-v1.8.json",
+  "title": "Base de Frases - Português/Alemão (UD + NGB)",
+  "description": "Schema para armazenamento de frases com análise híbrida (Gramática Tradicional + Universal Dependencies via Stanza)",
+  "type": "object",
+  "required": [ "frases" ],
+  "properties": {
+    "frases": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/frase" }
+    }
+  },
+  "$defs": {
+    "frase": {
+      "type": "object",
+      "required": [ "texto_da_frase", "id_da_frase", "polaridade", "oracoes" ],
+      "properties": {
+        "texto_da_frase": { "type": "string", "minLength": 1 },
+        "id_da_frase": { "type": "string", "format": "uuid" },
+        "tipo_frasal": {
+          "type": "string",
+          "enum": [ "Declarativa", "Interrogativa", "Exclamativa", "Imperativa", "Optativa" ]
+        },
+        "polaridade": {
+          "type": "string",
+          "enum": [ "Afirmativa", "Negativa" ]
+        },
+        "analise_sintatica_geral": {
+          "type": "object",
+          "properties": {
+            "tipo_periodo": { "type": "string", "enum": [ "Simples", "Composto" ] }
+          }
+        },
+        "oracoes": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/oracao" }
+        },
+        "tags_busca": { "type": "array", "items": { "type": "string" } },
+        "notas": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id_da_nota": { "type": "string" },
+              "texto_da_nota": { "type": "string" }
+            }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "analise_sintatica_geral": { "properties": { "tipo_periodo": { "const": "Simples" } } } } },
+          "then": { "properties": { "oracoes": { "minItems": 1, "maxItems": 1 } } }
+        },
+        {
+          "if": { "properties": { "analise_sintatica_geral": { "properties": { "tipo_periodo": { "const": "Composto" } } } } },
+          "then": { "properties": { "oracoes": { "minItems": 2 } } }
+        }
+      ]
+    },
+    "oracao": {
+      "type": "object",
+      "required": [ "texto_da_oracao", "ordem", "palavras_da_oracao" ],
+      "properties": {
+        "texto_da_oracao": { "type": "string" },
+        "ordem": { "type": "integer", "minimum": 1 },
+        "classificacao_da_oracao": {
+          "type": "string",
+          "enum": [
+            "Oração Absoluta",
+            "Oração Principal",
+            "Oração Coordenada Assindética",
+            "Oração Coordenada Sindética Aditiva",
+            "Oração Coordenada Sindética Adversativa",
+            "Oração Coordenada Sindética Alternativa",
+            "Oração Coordenada Sindética Conclusiva",
+            "Oração Coordenada Sindética Explicativa",
+            "Oração Subordinada Substantiva Subjetiva",
+            "Oração Subordinada Substantiva Objetiva Direta",
+            "Oração Subordinada Substantiva Objetiva Indireta",
+            "Oração Subordinada Substantiva Completiva Nominal",
+            "Oração Subordinada Substantiva Predicativa",
+            "Oração Subordinada Substantiva Apositiva",
+            "Oração Subordinada Adjetiva Restritiva",
+            "Oração Subordinada Adjetiva Explicativa",
+            "Oração Subordinada Adverbial Causal",
+            "Oração Subordinada Adverbial Comparativa",
+            "Oração Subordinada Adverbial Concessiva",
+            "Oração Subordinada Adverbial Condicional",
+            "Oração Subordinada Adverbial Conformativa",
+            "Oração Subordinada Adverbial Consecutiva",
+            "Oração Subordinada Adverbial Final",
+            "Oração Subordinada Adverbial Proporcional",
+            "Oração Subordinada Adverbial Temporal"
+          ]
+        },
+        "forma_da_oracao": {
+          "type": "string",
+          "enum": [ "Desenvolvida", "Reduzida de Infinitivo", "Reduzida de Gerúndio", "Reduzida de Particípio" ]
+        },
+        "voz": {
+          "type": "string",
+          "enum": [ "Ativa", "Passiva Analítica", "Passiva Sintética", "Reflexiva", "Recíproca" ]
+        },
+        "estrutura_verbal": {
+          "type": "object",
+          "properties": {
+            "tipo": { "type": "string", "enum": [ "Verbo Simples", "Locução Verbal", "Tempo Composto" ] },
+            "lista_de_verbos": { "type": "array", "items": { "$ref": "#/$defs/verbo" } }
+          }
+        },
+        "analise_sintatica_tradicional": { "$ref": "#/$defs/analise_sintatica_tradicional" },
+        "palavras_da_oracao": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/palavra_stanza" }
+        }
+      }
+    },
+    "verbo": {
+      "type": "object",
+      "properties": {
+        "texto_flexionado": { "type": "string" },
+        "lema": { "type": "string" },
+        "papel": { "type": "string", "enum": [ "Principal", "Auxiliar", "Modal", "De Ligação" ] },
+        "analise_morfologica": {
+          "type": "object",
+          "properties": {
+            "modo": { "type": [ "string", "null" ], "enum": [ "Indicativo", "Subjuntivo", "Imperativo", null ] },
+            "tempo": { "type": [ "string", "null" ] },
+            "pessoa": { "type": [ "string", "null" ] },
+            "numero": { "type": [ "string", "null" ] },
+            "forma_nominal": { "type": [ "string", "null" ], "enum": [ "Infinitivo", "Gerúndio", "Particípio", null ] }
+          }
+        }
+      }
+    },
+    "palavra_stanza": {
+      "type": "object",
+      "required": [ "id_token", "texto", "upos", "deprel", "id_pai" ],
+      "properties": {
+        "id_token": { "type": "integer", "minimum": 1 },
+        "id_global": { "type": "integer", "minimum": 1 },
+        "texto": { "type": "string" },
+        "lema": { "type": "string" },
+        "upos": {
+          "type": "string",
+          "description": "Universal POS Tags",
+          "enum": [ "ADJ", "ADP", "ADV", "AUX", "CCONJ", "DET", "INTJ", "NOUN", "NUM", "PART", "PRON", "PROPN", "PUNCT", "SCONJ", "SYM", "VERB", "X" ]
+        },
+        "xpos": { "type": "string" },
+        "feats": { "type": "string" },
+        "id_pai": { "type": "integer", "minimum": 0, "description": "0 se for ROOT, >0 se for dependente" },
+        "deprel": {
+          "type": "string",
+          "description": "Universal Dependency Relations",
+          "enum": [
+            "nsubj", "obj", "iobj", "csubj", "ccomp", "xcomp", "obl", "vocative", "expl", "dislocated",
+            "advcl", "advmod", "discourse", "aux", "cop", "mark", "nmod", "appos", "nummod", "acl",
+            "amod", "det", "clf", "case", "conj", "cc", "fixed", "flat", "compound", "list", "parataxis",
+            "orphan", "goeswith", "reparandum", "punct", "root", "dep"
+          ]
+        },
+        "misc": { "type": "string" }
+      }
+    },
+    "analise_sintatica_tradicional": {
+      "type": "object",
+      "properties": {
+        "termos_essenciais_da_oração": {
+          "type": "object",
+          "properties": {
+            "sujeito": { "type": "string" },
+            "predicado": { "type": "string" }
+          }
+        },
+        "termos_integrantes_da_oracao": {
+          "type": "object",
+          "properties": {
+            "complementos_verbais": {
+              "type": "object",
+              "properties": {
+                "objetos_diretos": { "type": "array", "items": { "type": "string" } },
+                "objetos_indiretos": { "type": "array", "items": { "type": "string" } }
+              }
+            },
+            "complementos_nominais": { "type": "array", "items": { "type": "string" } },
+            "agente_da_passiva": { "type": "string" },
+            "predicativos_do_sujeito": { "type": "array", "items": { "type": "string" } },
+            "predicativos_do_objeto": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "termos_acessorios_da_oracao": {
+          "type": "object",
+          "properties": {
+            "adjuntos_adnominais": { "type": "array", "items": { "type": "string" } },
+            "adjuntos_adverbiais": { "type": "array", "items": { "type": "string" } },
+            "apostos": { "type": "array", "items": { "type": "string" } },
+            "vocativos": { "type": "array", "items": { "type": "string" } }
+          }
+        }
+      }
+    }
+  }
+}
