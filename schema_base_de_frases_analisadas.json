@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/jspcodificacao/arquivos/refs/heads/main/schema_base_de_frases_analisadas.json",
-  "title": "Base de Frases - Português/Alemão (Versão 1.9)",
-  "description": "Schema para armazenamento de frases com análise híbrida (Stanza + Gemini) e alinhamento PT-DE",
+  "$id": "https://exemplo.com/schemas/frases-pt-br-v2.0.json",
+  "title": "Base de Frases - Português (Versão 2.0)",
+  "description": "Schema para armazenamento de frases com análise híbrida (Stanza + Gemini) - Sem alinhamento PT-DE",
   "type": "object",
   "required": [ "frases" ],
   "properties": {
@@ -36,11 +36,6 @@
           "type": "array",
           "items": { "$ref": "#/$defs/oracao" }
         },
-        "alinhamento_alemao": {
-          "type": "array",
-          "items": { "$ref": "#/$defs/alinhamento" },
-          "description": "Mapeamento de IDs de tokens entre Português e Alemão"
-        },
         "tags_busca": { "type": "array", "items": { "type": "string" } },
         "notas": {
           "type": "array",
@@ -63,18 +58,6 @@
           "then": { "properties": { "oracoes": { "minItems": 2 } } }
         }
       ]
-    },
-    "alinhamento": {
-      "type": "object",
-      "required": ["id_token_pt", "id_token_de", "tipo_correspondencia"],
-      "properties": {
-        "id_token_pt": { "type": "integer", "description": "Referência ao id_global do token PT" },
-        "id_token_de": { "type": "integer", "description": "Referência ao id_token do token DE" },
-        "tipo_correspondencia": {
-          "type": "string",
-          "enum": [ "Exata", "Aproximada", "Um-para-Muitos", "Muitos-para-Um", "Sem Correspondência" ]
-        }
-      }
     },
     "oracao": {
       "type": "object",
