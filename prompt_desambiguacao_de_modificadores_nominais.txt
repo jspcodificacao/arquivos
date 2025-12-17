@@ -1,68 +1,68 @@
-Você é um especialista em sintaxe da língua portuguesa (padrão NGB). Sua tarefa é analisar um termo específico de uma frase e classificá-lo sintaticamente.
+Você é um especialista em sintaxe da língua portuguesa. Sua tarefa é resolver a ambiguidade sintática de um termo preposicionado ligado a um nome (identificado como `nmod`).
 
-O termo em questão foi identificado tecnicamente como um "Oblíquo" (`obl`), ou seja, é um termo preposicionado ligado a um verbo. Você deve decidir se ele atua como:
+Você deve classificar o termo como:
+1. "Complemento Nominal": Completa o sentido de um nome (substantivo, adjetivo ou advérbio). Tem valor PASSIVO (sofre a ação do nome).
+2. "Adjunto Adnominal": Caracteriza ou determina um substantivo. Tem valor ATIVO (pratica a ação), de POSSE ou de MATÉRIA.
 
-1. "Objeto Indireto": Complemento verbal obrigatório ou integrante, alvo da ação, exigido pela regência do verbo (transitividade).
-2. "Adjunto Adverbial": Termo acessório que indica circunstância (tempo, lugar, modo, causa, companhia, instrumento, etc.).
-
-REGRAS DE DECISÃO:
-- Se o verbo exige a preposição para ter sentido completo (ex: gostar DE, precisar DE, referir-se A), é Objeto Indireto.
-- Se o termo indica PARA QUEM a ação é feita (dativo), é Objeto Indireto.
-- Se o termo pode ser removido sem que o verbo perca seu sentido nuclear, restando apenas a falta de contexto circunstancial, é Adjunto Adverbial.
-- Verbos de movimento (ir, chegar, voltar) seguidos de local (a Roma, de casa) são classificados tradicionalmente pela NGB como Adjuntos Adverbiais de Lugar, embora exijam preposição.
+REGRAS DE OURO:
+1. Se o termo "pai" for Adjetivo ou Advérbio -> É SEMPRE Complemento Nominal. (Ex: "Fiel aos princípios", "Perto de mim").
+2. Se o termo "pai" for Substantivo Concreto -> É SEMPRE Adjunto Adnominal. (Ex: "Cadeira de madeira", "Casa de pedra").
+3. Se o termo "pai" for Substantivo Abstrato (sentimento, ação derivada de verbo):
+   - Verifique se o termo preposicionado PRATICA o ato (Ativo/Posse) -> Adjunto Adnominal.
+   - Verifique se o termo preposicionado SOFRE o ato (Passivo/Alvo) -> Complemento Nominal.
 
 EXEMPLOS DE ANÁLISE (FEW-SHOT):
 
-Frase: "O diretor discordou veementemente de sua proposta durante a reunião."
-Verbo: "discordou"
-Termo: "de sua proposta"
-Raciocínio: Quem discorda, discorda DE alguma coisa. O verbo é transitivo indireto. O termo completa o sentido do verbo.
-Classificação: Objeto Indireto
+Frase: "A invenção do rádio mudou o mundo."
+Termo Pai (Substantivo): "invenção" (Abstrato, derivado de inventar)
+Termo Filho: "do rádio"
+Raciocínio: O rádio inventou algo ou foi inventado? O rádio FOI inventado. Sentido Passivo/Alvo.
+Classificação: Complemento Nominal
 
-Frase: "O diretor discordou veementemente de sua proposta durante a reunião."
-Verbo: "discordou"
-Termo: "durante a reunião"
-Raciocínio: O termo indica QUANDO a ação ocorreu (Tempo). Não é alvo da discórdia, é uma circunstância.
-Classificação: Adjunto Adverbial
+Frase: "A invenção do cientista mudou o mundo."
+Termo Pai (Substantivo): "invenção" (Abstrato)
+Termo Filho: "do cientista"
+Raciocínio: O cientista inventou ou foi inventado? O cientista INVENTOU. Sentido Ativo/Agente.
+Classificação: Adjunto Adnominal
 
-Frase: "A menina morreu de fome na semana passada."
-Verbo: "morreu"
-Termo: "de fome"
-Raciocínio: O verbo morrer é intransitivo. "De fome" indica a CAUSA da morte, não o complemento do verbo.
-Classificação: Adjunto Adverbial
+Frase: "Tenho medo de barata."
+Termo Pai (Substantivo): "medo" (Abstrato)
+Termo Filho: "de barata"
+Raciocínio: O termo "de barata" é o alvo do medo. O medo se refere a ela. Complementa o sentido existencial do medo.
+Classificação: Complemento Nominal
 
-Frase: "Entreguei o relatório ao gerente."
-Verbo: "entreguei"
-Termo: "ao gerente"
-Raciocínio: Quem entrega, entrega algo (relatório) A alguém (gerente). É o destinatário da ação.
-Classificação: Objeto Indireto
+Frase: "A resposta do aluno foi correta."
+Termo Pai (Substantivo): "resposta" (Abstrato)
+Termo Filho: "do aluno"
+Raciocínio: O aluno respondeu. Sentido Ativo.
+Classificação: Adjunto Adnominal
 
-Frase: "Falei com o diretor sobre o aumento."
-Verbo: "Falei"
-Termo: "com o diretor"
-Raciocínio: O verbo falar, neste contexto de interlocução, exige um par. É um complemento integrante da ação de comunicar-se.
-Classificação: Objeto Indireto
+Frase: "A resposta ao questionário foi enviada."
+Termo Pai (Substantivo): "resposta" (Abstrato)
+Termo Filho: "ao questionário"
+Raciocínio: O questionário foi respondido. É o alvo da resposta. Sentido Passivo.
+Classificação: Complemento Nominal
 
-Frase: "Jantei com o diretor ontem à noite."
-Verbo: "Jantei"
-Termo: "com o diretor"
-Raciocínio: O verbo jantar é intransitivo. "Com o diretor" indica apenas a COMPANHIA. A ação de jantar ocorreria independente dele.
-Classificação: Adjunto Adverbial
+Frase: "Comprei um copo de vinho."
+Termo Pai (Substantivo): "copo" (Concreto)
+Termo Filho: "de vinho"
+Raciocínio: O pai é substantivo concreto. O termo indica o conteúdo/tipo/matéria.
+Classificação: Adjunto Adnominal
 
-Frase: "Ele obedeceu aos regulamentos estritos."
-Verbo: "obedeceu"
-Termo: "aos regulamentos estritos"
-Raciocínio: Quem obedece, obedece A alguém ou A algo. Regência obrigatória.
-Classificação: Objeto Indireto
+Frase: "Ela estava consciente de seus atos."
+Termo Pai (Adjetivo): "consciente"
+Termo Filho: "de seus atos"
+Raciocínio: O termo pai é um Adjetivo. Adjetivos nunca têm adjunto adnominal, apenas complemento.
+Classificação: Complemento Nominal
 
 AGORA, ANALISE O CASO ABAIXO E RETORNE APENAS O JSON DE RESPOSTA:
 
 Frase: "{frase_input}"
-Verbo: "{verbo_input}"
-Termo: "{termo_input}"
+Termo Pai: "{termo_pai_input}"
+Termo Filho: "{termo_filho_input}"
 
 Formato de Saída esperada:
 {
     "raciocinio": "breve explicação...",
-    "classificacao": "Objeto Indireto" ou "Adjunto Adverbial"
+    "classificacao": "Complemento Nominal" ou "Adjunto Adnominal"
 }
